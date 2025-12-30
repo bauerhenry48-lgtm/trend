@@ -146,12 +146,19 @@ if __name__=="__main__":
         sigma = 0.0042
         currenttime = [
 
-      datetime(2025, 12, 13, 0, 5, 0),
-      datetime(2025, 12, 20, 0, 5, 0),
-   
+      datetime(2025, 12, 20, 12, 16, 0),
+      datetime(2025, 12, 21, 12, 8, 0),
+      datetime(2025, 12, 22, 9, 15, 0),
+      datetime(2025, 12, 23, 9, 37, 0),
+      datetime(2025, 12, 24, 8, 19, 0),
+      datetime(2025, 12, 25, 3, 16, 0),
+      datetime(2025, 12, 26, 22, 15, 0),
+      datetime(2025, 12, 27, 13, 37, 0),
+      datetime(2025, 12, 28, 17, 28, 0),
+      datetime(2025, 12, 29, 9, 56, 0),
 ]
 
-        for i in range(0, 2):
+        for i in range(0, 10):
             current_time = currenttime[i]
             data = fetch_ohlcv(current_time, symbol=symbol, interval='Min5', days_history=2, days_offset=0)
 
